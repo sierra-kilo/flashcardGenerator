@@ -15,4 +15,10 @@ ClozeCard.prototype.valid = function () {
     }
 }
 
+var card = new ClozeCard(process.argv[2], process.argv[3])
+card.partial();
+console.log(card.fullText);
+console.log(card.cloze);
+console.log(card.partialText);
+
 module.exports = ClozeCard

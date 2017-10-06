@@ -11,5 +11,9 @@ FlashCard.prototype.callBack = function () {
     console.log(this.back);
 };
 
+var card = new FlashCard(process.argv[2], process.argv[3]);
+card.callFront();
+card.callBack();
+
 
 module.exports = FlashCard;
